@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css" />
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+        <a href="/cart">My Cart</a>
+      </div>
+    </nav>
+    <br />
+    <h1>MeShop.</h1>
+    <br />
+    <br />
+    <h3>My first shop built on HTML,CSS and JavaScript</h3>
+    <img
+      src="https://www.addictioncenter.com/app/uploads/2020/01/online_shopping_addiction-scaled.jpeg"
+    />
+    <br />
+    <button
+      id="button1"
+      type="submit"
+      onclick="location.href=location.href.replace('shoppage','login')"
+    >
+      LOGIN
+    </button>
+    <button id="button2" type="submit" onclick="location.href=location.href.replace('shoppage','signup')">SIGNUP</button>
+    <div id="flex-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

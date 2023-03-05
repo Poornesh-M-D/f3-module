@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MeShop.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      console.log("inside", localStorage.getItem("userLoggedIn"));
+      if (!localStorage.getItem("userLoggedIn")) {
+        import(".shoppage/script.js");
+      } else {
+        window.location.href = "shop/index.html";
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+        <a href="/cart">My Cart</a>
+      </div>
+    </nav>
+    <br />
+    <h1>MeShop.</h1>
+    <br />
+    <br />
+    <h3>My first shop built on HTML,CSS and JavaScript</h3>
+    <img
+      src="https://www.addictioncenter.com/app/uploads/2020/01/online_shopping_addiction-scaled.jpeg"
+    />
+    <br />
+    <button
+      id="button1"
+      type="submit"
+      onclick="location.href=location.href='login'"
+    >
+      LOGIN
+    </button>
+    <button
+      id="button2"
+      type="submit"
+      onclick="location.href=location.href='signup'"
+    >
+      SIGNUP
+    </button>
+    <div id="flex-container"></div>
+  </body>
+</html>
