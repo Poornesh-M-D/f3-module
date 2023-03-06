@@ -55,6 +55,17 @@ nav .nav-items a {
     height: 30px;
     width: 130px;
 }
+#historyBtn{
+  color:black;
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+}
+#historyBtn:hover{
+    color: white;
+    background-color: black;
+}
 #searchBtn:hover{
     color: white;
     background-color: black;
